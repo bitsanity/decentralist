@@ -1,0 +1,210 @@
+<html>
+<head>
+  <title>DecentraList</title>
+</head>
+<style>
+  * {
+    font-family: "FreeMono", monospace;
+  }
+  body {
+    padding: 10px;
+    border-style: solid;
+    border-width: 5px;
+  }
+  table {
+    padding: 5px;
+    border-collapse: collapse;
+  }
+  .highlight {
+    padding: 3px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+  }
+  .urlformat {
+    font-weight: bold;
+    color: blue;
+  }
+  .money {
+    color: darkgreen;
+    font-weight: bold;
+  }
+  .imagedimension {
+    font-weight: bold;
+    background-color: yellow;
+  }
+</style>
+<body>
+<center><h2>DecentraList: Post/Publish ANYTHING</h2></center>
+
+<p/><hr/><p/>
+
+<h3><span class=highlight>How to Post:</span></h3>
+
+<blockquote>
+Invoke <b>postImage()</b> or <b>postText()</b> on the smart contract at:
+<a
+  href=https://etherscan.io/address/0x05ebFb4F0d74EeB7b3AA9BFD426A80518a1686f7>
+  0x05ebFb4F0d74EeB7b3AA9BFD426A80518a1686f7
+</a>
+</blockquote>
+
+<p>
+&nbsp;
+</p>
+
+<h3><span class=highlight>Where to View Posts:</span></h3>
+
+<blockquote>
+Data sent to the smart contract will remain on blockchain as long as the
+blockchain operates. This site has no control of resources linked to by
+posts.
+
+<p>
+<table cellspacing=5 cellpadding=5>
+<tr>
+<th align=right>URL format:</th>
+<td><span class=urlformat>
+http://hnws6y3kyqjfcm6s.onion/locale/category/yyyymmdd.html</span>
+</td>
+</tr>
+<tr>
+<th align=right>Example:</th>
+<td>
+<a href=http://hnws6y3kyqjfcm6s.onion/MATRIX/Community/20181124.html>
+http://hnws6y3kyqjfcm6s.onion/MATRIX/Community/20181124.html</a>
+</td>
+</tr>
+</table>
+<p/>
+<table cellpadding=5>
+<tr>
+<th align=left>Locales:</th>
+<th width=100px>&nbsp;</th>
+<th align=left>Categories:</th>
+</tr>
+<tr>
+<td>
+<a href=./AMS/>AMS</a> Amsterdam<br/>
+<a href=./BER/>BER</a> Berlin<br/>
+<a href=./CPT/>CPT</a> Cape Town<br/>
+<a href=./ORD/>ORD</a> Chicago<br/>
+<a href=./DUB/>DUB</a> Dublin<br/>
+<a href=./EDI/>EDI</a> Edinburgh<br/>
+<a href=./YHW/>YHW</a> London<br/>
+<a href=./LAX/>LAX</a> Los Angeles<br/>
+<a href=./MAD/>MAD</a> Madrid<br/>
+<a href=./MEX/>MEX</a> Mexico City<br/>
+<a href=./YUL/>YUL</a> Montreal<br/>
+<a href=./NYC/>NYC</a> New York City<br/>
+<a href=./PAR/>PAR</a> Paris<br/>
+<a href=./FCO/>FCO</a> Rome<br/>
+<a href=./YQY/>YQY</a> Sydney<br/>
+<a href=./YTO/>YTO</a> Toronto<br/>
+<a href=./YVR/>YVR</a> Vancouver<p/>
+<a href=./GLOBAL/>GLOBAL</a> Physical World<br/>
+<a href=./MATRIX/>MATRIX</a> Virtual World<br/>
+</td>
+<td width=100px>&nbsp;</td>
+<td valign=top>
+<a href=./GLOBAL/Animals/>Animals</a><br/>
+<a href=./GLOBAL/Boats/>Boats</a><br/>
+<a href=./GLOBAL/Cannabis/>Cannabis</a><br/>
+<a href=./GLOBAL/Community/>Community</a><br/>
+<a href=./GLOBAL/Cryptocurrencies/>Cryptocurrencies</a><br/>
+<a href=./GLOBAL/Farm-And-Garden/>Farm-And-Garden</a><br/>
+<a href=./GLOBAL/Finance/>Finance</a><br/>
+<a href=./GLOBAL/Food/>Food</a><br/>
+<a href=./GLOBAL/General-Items>General-Items</a><br/>
+<a href=./GLOBAL/Home-Rentals/>Home-Rentals</a><br/>
+<a href=./GLOBAL/Home-Sales/>Home-Sales</a><br/>
+<a href=./GLOBAL/Jobs/>Jobs</a><br/>
+<a href=./GLOBAL/Services/>Services</a><br/>
+<a href=./GLOBAL/Sporting-Goods/>Sporting-Goods</a><br/>
+<a href=./GLOBAL/Vehicles/>Vehicles</a><br/>
+<a href=./GLOBAL/XXX/>XXX</a><br/>
+</td>
+</tr>
+</table>
+
+</blockquote>
+
+<p>
+&nbsp;
+</p>
+
+<h3><span class=highlight>Features:</span></h3>
+<ul>
+  <li>Posts are converted to images and arranged into HTML pages.</li>
+  <li>This site publishes one page for each Locale &amp; Category per day.</li>
+  <li>Locale &amp; Category are <b>case-sensitive</b>.</li>
+  <li>The date format is YYYYMMDD where MM is from 01 to 12.</li>
+  <li>The date of the post is the timestamp of the block that includes the
+      transaction.</li>
+  <li>Publishing is done soon after midnight UTC daily.</li>
+  <p/>
+  <li><b>Fees:</b>
+    <ul>
+      <li>The pay-to-post model keeps this site uncensorable.</li>
+      <li>Image Post: <span class=money>1 finney</span> per image which is
+          <span class=money>0.001 ETH</span></li>
+      <li>Text Post: <span class=money>5 szabo</span> per byte, which would be
+          <span class=money>0.00085 ETH</span> for a 170-byte post.</li>
+      <li>Anyone can view the fees in the smart contract.</li>
+      <li>The contract owner can adjust the fees any time.</li>
+      <li>Fees cited are the required <em>minimums</em>. Senders may offer
+          higher fees, but no change will be given.</li>
+      <li>No user accounts are maintained.</li>
+    </ul>
+  </li>
+  <p/>
+  <li><b>Network Miner Fees ("gas"):</b>
+      <ul>
+        <li>The gas requirement depends on the quantity of data provided in
+            the function call parameters.</li>
+        <li>Offer at least 40,000 gas for full 170-byte text posting.</li>
+        <li>Offer at least 35,000 gas for an image link posting.</li>
+        <li>Check <a href=https://ethgasstation.info>ETH Gas Station</a>
+            for the current <b>gas price</b> when posting.</li>
+        <li>Ethereum returns the extra gas if one sends too much.</li>
+        <li>Sending insufficient gas fails the transaction and the gas is not
+            returned to the sender.</li>
+      </ul>
+  </li>
+</ul>
+
+<p/>
+
+<h3><span class=highlight>Image Posts:</span></h3>
+<ul>
+  <li>This site uses the posted link's <b>url</b> value as the <b>src</b>
+      attribute within a &lt;img&gt; tag.</li>
+  <li>This site makes no attempt to validate links exist or preview resources
+      prior to publishing.</li>
+  <li>This site does not save images that have been submitted.</li>
+  <li>Posters may choose <a href=https://ipfs.io>IPFS</a> to share images.
+      See <a href=https://ipfs.github.io/public-gateway-checker/>
+      Public IPFS Gateways</a>.</li>
+  <li>Tag <b>width</b> and <b>height</b> attributes will scale each image
+      to <span class=imagedimension>320x200 pixels</span>.</li>
+  <li>We suggest using an image format that common browsers recognize, such as
+      PNG, JPG, GIF, BMP, SVG.</li>
+</ul>
+
+<p/>
+
+<h3><span class=highlight>Text Posts:</span></h3>
+<ul>
+  <li>Each text post is converted to a
+      <span class=imagedimension>320x95 pixel</span> PNG image.</li>
+  <li>Characters are placed in a logical grid
+      <span class=imagedimension>5 rows x 34 cols</span> for a total of
+      170 visible. Extra characters are truncated.</li>
+  <li>The font used is Monospace Bold 12, black.</li>
+</ul>
+
+<p/>
+
+</body>
+</html>
+
